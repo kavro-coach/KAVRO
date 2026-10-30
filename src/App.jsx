@@ -94,7 +94,7 @@ export default function App() {
           const failed = [!result.adminSent && `admin: ${result.admin.error}`, !result.customerSent && `customer: ${result.customer.error}`].filter(Boolean).join('; ');
           setEmailError(`The ${delivered} email was sent, but another email failed (${failed}). Try again; the successful email will not be resent.`);
         } else {
-          setEmailError(`We couldn’t send the enquiry emails. ${result.admin.error || result.customer.error} Your form details are still here; please try again.`);
+          setEmailError(`We couldn’t send the enquiry emails. Admin notification: ${result.admin.error} Customer confirmation: ${result.customer.error} Your form details are still here; please try again.`);
         }
         return;
       }
