@@ -131,3 +131,5 @@
 .submit-button:disabled{opacity:.68;cursor:wait;transform:none}
 .email-spinner{display:inline-block;width:14px;height:14px;border:2px solid #ffffff65;border-top-color:#fff;border-radius:50%;animation:email-spin .8s linear infinite;padding:0!important;margin-right:9px}
 @keyframes email-spin{to{transform:rotate(360deg)}}
+.email-error{display:flex;flex-direction:column;gap:8px}
+.email-error a{font-weight:700;color:#852d22;text-decoration:underline}
